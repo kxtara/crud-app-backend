@@ -27,7 +27,7 @@ This repository contains the backend code for a simple CRUD (Create, Read, Updat
 To start the server, run the following command:
 
 ```bash
-npm start
+npm run dev
 ```
 
 The server will start listening on port 3000 by default.
