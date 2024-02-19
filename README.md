@@ -7,7 +7,7 @@ This repository contains the backend code for a simple CRUD (Create, Read, Updat
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/kxtara/crud-app-backend.git
+    git clone <repository_url>
     ```
 
 2. Install dependencies:

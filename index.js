@@ -1,12 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const productRoute = require("./routes/product.route.js");
-require('dotenv').config()
 const app = express();
-
-const port = process.env.PORT || 3000;
-const mongodbUri = process.env.MONGODB_URI;
-
 
 // middleware
 app.use(express.json());
@@ -20,9 +15,11 @@ app.get("/", (req, res) => {
 });
 
 mongoose
-  .connect(mongodbUri)
+  .connect(
+    "mongodb+srv://admin:UrDezYbhCSPQrpGS@backenddb.wdbzhwe.mongodb.net/Node-API?retryWrites=true&w=majority"
+  )
   .then(() => {
-    app.listen(port, () => {
+    app.listen(3000, () => {
       console.log("Server is running on port 3000");
     });
     console.log("Connected to database!");
